@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://crociatofaf.github.io/rsschool-cv/cv
