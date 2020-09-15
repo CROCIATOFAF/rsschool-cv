@@ -29,4 +29,4 @@ In future I aim to be a full-stack developer as I'm also interested in backend s
 7. <strong>Education:</strong>
     jurisprudence (bachelor)
 
-8. <strong>English - advanced</strong> :gb:
+8. <strong>English - advanced</strong> :uk:
