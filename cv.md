@@ -1,32 +1,43 @@
-1. <strong>David Gogua</strong> :space_invader:
-2. <strong>Contacts:</strong> :phone:
-    - tel: +7(777)777-77-77
-    - email: tortex0.60@gmail.com
-3. My goal is to get a job as a software developer. Would like to improve my coding skills, work with interesting and complicated projects.
-Learn one of the frameworks: React, Angular, Vue in order to do work with the latest technologies and be efficient with them.
-In future I aim to be a full-stack developer as I'm also interested in backend side of programming.
-4. <strong>Skills:</strong> :computer:
-- HTML
+# David Gogua :space_invader:
 
-    ~ level: proficient
-- CSS
+## Contacts :phone:
+- **Phone**: +995-777-777-777
+- **Email**: [tortex0.60@gmail.com](mailto:tortex0.60@gmail.com)
+- **GitHub**: [crociatofaf](https://github.com/crociatofaf)
 
-    ~ level: proficient
-- Javascript
+---
 
-    ~ level: competent
+## Summary
+My goal is to get a job as a software developer. I am eager to improve my coding skills and work on interesting and challenging projects. I aim to learn frameworks like React, Angular, or Vue to stay updated with the latest technologies and use them efficiently. In the future, I aspire to become a full-stack developer, as I am also interested in the backend side of programming.
 
-- Frameworks: React
+---
 
-    ~ level: beginner
+## Skills :computer:
+- **HTML**: Proficient
+- **CSS**: Proficient
+- **JavaScript**: Proficient
+- **Frameworks**: 
+  - React: Competent
 
-5. <strong>Code:</strong> :floppy_disk:
-          https://github.com/crociatofaf
+---
 
-6. <strong>Experience:</strong>
-    8 month working experience at web-studio, mainly working with HTML/CSS/JS stack.
+## Code Examples :floppy_disk:
+Check out my projects on GitHub: [github.com/crociatofaf](https://github.com/crociatofaf)
 
-7. <strong>Education:</strong>
-    jurisprudence (bachelor)
+---
 
-8. <strong>English - advanced</strong>
+## Experience
+8 months of working experience at a web studio, mainly working with the HTML/CSS/JS stack.
+Working currently as a freelance Software Developer.
+
+---
+
+## Education
+- **Jurisprudence (Bachelor's Degree)**
+
+---
+
+## Language Proficiency
+- **English**: C2
+- **Russian**: C2
+- **Georgian**: B2
