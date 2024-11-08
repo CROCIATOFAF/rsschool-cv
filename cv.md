@@ -1,6 +1,6 @@
-# David Gogua :space_invader:
+# David Gogua
 
-## Contacts :phone:
+## Contacts
 - **Phone**: +995-777-777-777
 - **Email**: [tortex0.60@gmail.com](mailto:tortex0.60@gmail.com)
 - **GitHub**: [crociatofaf](https://github.com/crociatofaf)
@@ -12,7 +12,7 @@ My goal is to get a job as a software developer. I am eager to improve my coding
 
 ---
 
-## Skills :computer:
+## Skills
 - **HTML**: Proficient
 - **CSS**: Proficient
 - **JavaScript**: Proficient
@@ -21,14 +21,14 @@ My goal is to get a job as a software developer. I am eager to improve my coding
 
 ---
 
-## Code Examples :floppy_disk:
+## Code Examples
 Check out my projects on GitHub: [github.com/crociatofaf](https://github.com/crociatofaf)
 
 ---
 
 ## Experience
-8 months of working experience at a web studio, mainly working with the HTML/CSS/JS stack.
-Working currently as a freelance Software Developer.
+8 months of working experience at a web studio, mainly working with the HTML/CSS/JS stack.  
+Working currently as a freelance Software Developer.  
 
 ---
 
