@@ -1,7 +1,7 @@
 # David Gogua
 
 ## Contacts
-- **Phone**: +995-777-777-777
+- **Phone**: +995&#8209;777&#8209;777&#8209;777
 - **Email**: [tortex0.60@gmail.com](mailto:tortex0.60@gmail.com)
 - **GitHub**: [crociatofaf](https://github.com/crociatofaf)
 
