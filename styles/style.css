@@ -15,6 +15,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -28,6 +29,7 @@ body {
   padding: 20px 60px;
   color: var(--lavender);
   /* color: var(--vapor-pink); */
+  height: 100vh;
 }
 
 a {
@@ -94,6 +96,8 @@ h2 {
   width: 100%;
   margin-bottom: 40px;
   align-items: center;
+  z-index: 10;
+  flex-shrink: 0;
 }
 
 .contacts {
@@ -226,6 +230,9 @@ h2 {
   max-width: 1440px;
   display: block;
   flex-direction: column;
+  overflow-y: auto;
+  max-height: 100%;
+  flex: 1;
 }
 
 .skill-bar {
@@ -343,11 +350,13 @@ h2 {
 
 .container {
   display: flex;
+  flex: 1;
+  overflow: hidden;
 }
 
 .experience-info__container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
 }
 
