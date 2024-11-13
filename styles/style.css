@@ -6,7 +6,10 @@
   --coral: #ff7f50;
   --lavender: #e6e6fa;
   --deep-blue: #0067a5;
+  --pale-gold: #DEB887;
   --light-transparent-lavender: rgba(230, 230, 250, 0.3);
+  --silver: #C0C0C0;
+  --vapor-pink:#ffa0ff;
 }
 
 * {
@@ -16,8 +19,6 @@
 
 html {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* background-color: #f8f8f8; */
-  /* background-color: #f8f8ff; */
   background-color: #0067a5;
 }
 
@@ -25,7 +26,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px 60px;
-  color: #e6e6fa;
+  color: var(--lavender);
+  /* color: var(--vapor-pink); */
 }
 
 a {
@@ -34,7 +36,7 @@ a {
   color: #1874CD;
   color: #0090a5;
   color: #98ff98;
-  color: #ff7f50;
+  color: #DEB887;
 }
 
 h2 {
@@ -113,12 +115,18 @@ h2 {
 }
 
 .link {
+  position: relative;
   font-size: 24px;
   line-height: 24px;
-}
-
-.container-bottom-right .link {
-  margin-bottom: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--lavender);
+  }
 }
 
 .link:hover,
@@ -130,17 +138,23 @@ h2 {
   opacity: 0.3;
 }
 
-
-.goals {
-  position: relative;
-  max-width: 900px;
+.section {
   padding: 20px;
-  /* width: 100%; */
-  align-self: center;
-  margin-bottom: 30px;
   border: 2px solid var(--lavender);
   border-radius: 0 18px;
+  margin-bottom: 30px;
+}
+
+
+.section--goals {
+  position: relative;
+  align-self: center;
   justify-items: center;
+}
+
+.section--experience {
+  display: flex;
+  flex-direction: column;
 }
 
 .goals__header {
@@ -161,14 +175,21 @@ h2 {
 
 .goals__text {
   text-align: center;
+  text-align: center;
 }
 
 .experience {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .education {
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.languages {
+  text-align: center;
 }
 
 .goals__text,
@@ -190,7 +211,7 @@ h2 {
 .skill-name {
   font-size: 24px;
   line-height: 28px;
-  color: #ff7f50;
+  color: var(--pale-gold);
   margin-bottom: 5px;
 }
 
@@ -206,22 +227,6 @@ h2 {
   display: block;
   flex-direction: column;
 }
-
-.container-bottom-right {
-  display: flex;
-  flex-direction: column;
-  width: 32%;
-  border: 2px solid var(--lavender);
-  border-radius: 0 18px;
-  padding: 20px;
-}
-
-/* @media (max-width: 900px) {
-
-  .about-me {
-    color: red;
-  }
-} */
 
 .skill-bar {
   margin-bottom:26px;
@@ -338,4 +343,50 @@ h2 {
 
 .container {
   display: flex;
+}
+
+.experience-info__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.projects {
+  margin-top: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.projects-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1rem;
+
+  div {
+    border: 2px solid var(--lavender);
+    border-radius: 7%;
+    overflow: scroll;
+  }
+}
+
+/* activity overview */
+
+.activity-overview {
+  border: 1px solid #e6e6fa;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.activity-item {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.activity-item a {
+  color: #0067a5;
+  text-decoration: none;
 }
