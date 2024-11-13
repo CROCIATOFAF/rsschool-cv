@@ -28,7 +28,6 @@ body {
   margin: 0 auto;
   padding: 20px 60px;
   color: var(--lavender);
-  /* color: var(--vapor-pink); */
   height: 100vh;
 }
 
@@ -42,7 +41,7 @@ a {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 28px;
 }
 
@@ -55,13 +54,13 @@ h2 {
 }
 
 .nav__header {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
   text-transform: uppercase;
 }
 
 .about-me__header {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
   text-transform: uppercase;
 }
@@ -79,13 +78,12 @@ h2 {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 50px;
-  align-items: center;
 }
 
 .about-me__content-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 320px;
   width: 100%;
 }
 
@@ -204,12 +202,21 @@ h2 {
   line-height: 26px;
 }
 
-.education__header {
+.education__header,
+.languages__header,
+.experience__header {
+  position: relative;
   margin-bottom: 10px;
-}
 
-.languages__header {
-  margin-bottom: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--lavender);
+  }
 }
 
 .skill-name {
@@ -217,12 +224,6 @@ h2 {
   line-height: 28px;
   color: var(--pale-gold);
   margin-bottom: 5px;
-}
-
-.experience__header {
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 10px;
 }
 
 .container-bottom {
@@ -252,7 +253,6 @@ h2 {
 
 .skill-bar-container {
   width: 100%;
-  /* max-width: 350px; */
   height:26px;
   height: 0.4em;
   background: rgba(230, 230, 250, 0.3);
@@ -365,6 +365,16 @@ h2 {
 
   h2 {
     margin-bottom: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 3px;
+      background-color: var(--lavender);
+    }
   }
 }
 
@@ -377,6 +387,10 @@ h2 {
     border: 2px solid var(--lavender);
     border-radius: 7%;
     overflow: hidden;
+
+    &:hover {
+      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
   }
 }
 
@@ -421,4 +435,83 @@ h2 {
 }
 .section--activity img:nth-child(4) {
   grid-column: 1 / -1;
+}
+
+.link-gh {
+  font-size: 28px;
+}
+
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.codewars-challenges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+
+  div {
+    border: 2px solid var(--lavender);
+    border-radius: 7%;
+    overflow: hidden;
+
+    &:hover {
+      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+  }
+}
+
+.section--codewars{
+  border-style: none;
+  padding: 0;
+
+  h2 {
+    margin: 20px 0;
+  }
+}
+
+.section--codewars-solution {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid var(--lavender);
+  border-radius: 10px;
+  background-color: var(--lavender);
+  color: var(--deep-blue);
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: var(--deep-blue);
+  color: var(--lavender);
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+code {
+  color: var(--lavender);
+  font-size: 14px;
 }

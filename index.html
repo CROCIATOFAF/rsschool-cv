@@ -160,6 +160,26 @@
         <h2>My Projects on GitHub</h2>
         <div class="projects-links" id="projects-links"></div>
       </section>
+
+      <section class="section section--codewars-solution">
+        <h2>My Solution for 'Jaden Casing Strings'</h2>
+        <a href="https://www.codewars.com/kata/5390bac347d09b7da40006f6/javascript">View Challenge</a>
+        <pre><code class="code-block">
+          String.prototype.toJadenCase = function () {
+            var newStr = '';
+            this.split(' ').forEach((s) => {
+              newStr = newStr + " " + s.substring(0, 1).toUpperCase() + s.substring(1); 
+            })
+            return newStr.substring(1);
+          };
+        </code></pre>
+      </section>
+      
+      <section class="section section--codewars">
+        <h2>My Codewars Challenges</h2>
+        <div class="codewars-challenges"></div>
+      </section>
+      
       
     </div>
 
@@ -167,6 +187,7 @@
   </div>
 
   <script src="./js/repositories.js"></script>
+  <script src="./js/codewars.js"></script>
 
 </body>
 </html>
